@@ -1,30 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        //Hero
-        Hero h = new Hero();
-        h.name = "ささき";
-        h.HP = 100;
-        //Sword
-        Sword s = new Sword();
-        s.name = "炎の剣";
-        s.damage = 10;
-        h.Sword = s;
-
-        //Wizard
-        Wizard w = new Wizard();
-        w.name = ("たなか");
-        w.HP = 70;
-
-        //Matango
-        Matango m1 = new Matango();
-        m1.HP = 50;
-        m1.suffix = 'A';
-        Matango m2 = new Matango();
-        m2.HP = 50;
-        m2.suffix = 'B';
-      
-        //冒険の始まり
-        w.heal(h);
+        //メイン側でいちいち初期化するのは面倒・・・
+        Hero h = new Hero("佐々木");
+        Hero hh = new Hero();
         System.out.println(h.HP);
+        System.out.println(h.name);
+        System.out.println(hh.HP);
+        System.out.println(hh.name);
     }
 }

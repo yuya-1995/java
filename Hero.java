@@ -4,6 +4,16 @@ public class Hero {
         int HP; //HPの宣言
         Sword Sword;
 
+        //コンストラクタ(インスタンスされた時の処理)
+        public Hero(String name){
+            this.HP = 100;
+            this.name = name;
+        }
+        public Hero(){
+            this.HP = 100;
+            this.name = "ダミー";
+        }
+
         //操作の定義
         // public void attack(){};
         public void sleep(){
