@@ -19,4 +19,10 @@ public class DemoApplication {
 		return "index"; // src/main/resources/templates/index.html をレンダリングして返す
 	}
 
+	//ルーティング？
+	@GetMapping("/next.html")
+	public String next() {
+		return "next";
+	}
+
 }
